@@ -1,0 +1,1200 @@
+/* =========================================
+   SEARCH BOX
+========================================= */
+
+.search-box {
+    width: 280px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 0 12px;
+
+    background: #ffffff;
+
+    border: 1px solid #cfe8f3;
+
+    border-radius: 8px;
+
+    transition: 0.2s ease;
+}
+
+.search-box:focus-within {
+    border-color: #4aaed1;
+
+    box-shadow:
+        0 0 0 3px rgba(74, 174, 209, 0.10);
+}
+
+.search-icon {
+    flex-shrink: 0;
+
+    font-size: 14px;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #1e3a4d;
+
+    font-size: 12px;
+}
+
+.search-box input::placeholder {
+    color: #90a4ae;
+}
+
+
+/* =========================================
+   SEARCH RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .search-box {
+        width: 100%;
+    }
+
+}
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =========================================
+   DATA TABLE
+========================================= */
+
+.data-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 800px;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.data-table thead {
+    background: #f3fafc;
+}
+
+.data-table th {
+    padding: 14px 18px;
+
+    text-align: left;
+
+    color: #55717e;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+
+    border-bottom: 1px solid #dceff5;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.data-table td {
+    padding: 15px 18px;
+
+    border-bottom: 1px solid #edf5f8;
+
+    color: #45616e;
+
+    font-size: 12px;
+
+    vertical-align: middle;
+}
+
+.data-table tbody tr {
+    transition: 0.15s ease;
+}
+
+.data-table tbody tr:hover {
+    background: #f8fcfd;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   TABLE MESSAGE
+========================================= */
+
+.table-message {
+    padding: 50px 20px !important;
+
+    text-align: center !important;
+
+    color: #8aa0aa !important;
+
+    font-size: 13px !important;
+}
+
+
+/* =========================================
+   TABLE LOADING
+========================================= */
+
+.table-loading {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.table-loading .loading-spinner {
+    margin: 0;
+}
+
+
+/* =========================================
+   ACTION CELL
+========================================= */
+
+.table-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+/* =========================================
+   TABLE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .data-table {
+        min-width: 700px;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 12px 14px;
+    }
+
+}
+
+/* =========================================
+   TABLE TOOLBAR
+========================================= */
+
+.table-toolbar {
+    min-height: 78px;
+
+    padding: 16px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #dceff5;
+}
+
+
+/* =========================================
+   TOOLBAR INFO
+========================================= */
+
+.table-toolbar-info {
+    min-width: 0;
+}
+
+.table-toolbar-info h3 {
+    margin: 0;
+
+    color: #183b4d;
+
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+.table-toolbar-info span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #8aa0aa;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .table-toolbar {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 14px;
+    }
+
+    .table-toolbar .search-box {
+        width: 100%;
+    }
+
+}
+
+/* ==========================================
+   MANAGEMENT PAGE
+========================================== */
+
+.page-container {
+    width: 100%;
+}
+
+
+.page-error {
+    margin-bottom: 18px;
+
+    padding: 12px 16px;
+
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+
+    border-radius: 8px;
+
+    color: #b91c1c;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   MANAGEMENT TOOLBAR
+========================================== */
+
+.management-toolbar {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 16px;
+
+    margin-bottom: 20px;
+
+    padding: 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #e0f2fe;
+
+    border-radius: 12px;
+}
+
+
+.primary-button {
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #0ea5e9;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+
+.primary-button:hover {
+    background: #0284c7;
+}
+
+
+/* ==========================================
+   TABLE CARD
+========================================== */
+
+.data-table-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e0f2fe;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 12px rgba(14, 116, 144, 0.05);
+}
+
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+.data-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 1050px;
+}
+
+
+.data-table th {
+    padding: 14px 16px;
+
+    background: #f0f9ff;
+
+    color: #334155;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-align: left;
+
+    white-space: nowrap;
+}
+
+
+.data-table td {
+    padding: 15px 16px;
+
+    border-top: 1px solid #f0f9ff;
+
+    color: #475569;
+
+    font-size: 13px;
+
+    vertical-align: middle;
+}
+
+
+.data-table tbody tr:hover {
+    background: #f8fcff;
+}
+
+
+/* ==========================================
+   DOCTOR NAME
+========================================== */
+
+.doctor-table-name {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.doctor-avatar {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #e0f2fe;
+
+    border-radius: 9px;
+
+    font-size: 17px;
+}
+
+
+.doctor-table-name div:last-child {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.doctor-table-name strong {
+    color: #1e293b;
+
+    font-size: 13px;
+}
+
+
+.doctor-table-name span {
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+/* ==========================================
+   TABLE ACTIONS
+========================================== */
+
+.table-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+
+.table-action {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e0f2fe;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.table-action:hover {
+    background: #e0f2fe;
+
+    border-color: #bae6fd;
+}
+
+
+@media (max-width: 700px) {
+
+    .management-toolbar {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+    .primary-button {
+        width: 100%;
+    }
+}
+
+/* ==========================================
+   PATIENT CELL
+========================================== */
+
+.patient-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.patient-avatar {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e0f2fe;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+}
+
+.patient-cell strong {
+    display: block;
+
+    color: #1e293b;
+
+    font-size: 13px;
+}
+
+.patient-cell small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/* ==========================================
+   VIEW BUTTON
+========================================== */
+
+.view-button {
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid #bae6fd;
+
+    border-radius: 7px;
+
+    background: #f0f9ff;
+
+    color: #0369a1;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.view-button:hover {
+    background: #e0f2fe;
+    border-color: #7dd3fc;
+}
+
+.table-toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.filter-select {
+    min-width: 150px;
+    padding: 10px 12px;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #334155;
+    font-size: 14px;
+    outline: none;
+}
+
+.filter-select:focus {
+    border-color: #7dd3fc;
+}
+
+.person-cell {
+    display: flex;
+    align-items: center;
+}
+
+.reason-text {
+    color: #64748b;
+}
+
+@media (max-width: 800px) {
+
+    .table-toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .table-toolbar-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-select {
+        width: 100%;
+    }
+}
+
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e0f2fe;
+}
+
+.details-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.details-header h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 24px;
+}
+
+.details-section {
+    padding: 25px 0;
+    border-bottom: 1px solid #e0f2fe;
+}
+
+.details-section:last-child {
+    border-bottom: none;
+}
+
+.details-section h3 {
+    margin: 0 0 20px;
+    color: #0369a1;
+    font-size: 18px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.detail-item {
+    padding: 16px;
+    background: #f8fcff;
+    border: 1px solid #e0f2fe;
+    border-radius: 9px;
+}
+
+.detail-item span {
+    display: block;
+    margin-bottom: 7px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.detail-item strong {
+    color: #1e293b;
+    font-size: 15px;
+}
+
+.detail-description {
+    padding: 16px;
+    background: #f8fcff;
+    border: 1px solid #e0f2fe;
+    border-radius: 9px;
+}
+
+.detail-description span {
+    display: block;
+    margin-bottom: 8px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.detail-description p {
+    margin: 0;
+    color: #334155;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+
+    .details-header {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.total-amount {
+    color: #0284c7;
+    white-space: nowrap;
+}
+
+/* =====================================================
+   TABLE PAGINATION
+===================================================== */
+
+.table-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 16px 20px;
+
+    border-top: 1px solid #e8eef3;
+
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   TOTAL DOCTORS
+===================================================== */
+
+.pagination-total {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #475467;
+
+    font-size: 14px;
+}
+
+.pagination-total strong {
+    color: #344054;
+
+    font-weight: 600;
+}
+
+.pagination-total span {
+    color: #168fc2;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   PAGINATION CONTROLS
+===================================================== */
+
+.pagination-controls {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+}
+
+
+/* =====================================================
+   PREVIOUS / NEXT BUTTON
+===================================================== */
+
+.pagination-button {
+    min-width: 90px;
+
+    height: 36px;
+
+    padding: 0 12px;
+
+    border: 1px solid #d9e2e8;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #475467;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.pagination-button:hover:not(:disabled) {
+    background: #f1f9fc;
+
+    border-color: #0ea5d8;
+
+    color: #078bbb;
+}
+
+.pagination-button:disabled {
+    opacity: 0.45;
+
+    cursor: not-allowed;
+}
+
+
+/* =====================================================
+   PAGE NUMBERS
+===================================================== */
+
+.pagination-pages {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+/* =====================================================
+   PAGE NUMBER BUTTON
+===================================================== */
+
+.pagination-page {
+    width: 34px;
+
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #d9e2e8;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #475467;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* =====================================================
+   ACTIVE PAGE
+===================================================== */
+
+.pagination-page.active {
+    background: #0ea5d8;
+
+    border-color: #0ea5d8;
+
+    color: #ffffff;
+}
+
+
+.pagination-page:hover:not(.active) {
+    background: #f1f9fc;
+
+    border-color: #0ea5d8;
+
+    color: #078bbb;
+}
+
+
+/* =====================================================
+   PAGE INFO
+===================================================== */
+
+.pagination-info {
+    margin: 0 4px;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .table-pagination {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .pagination-total {
+        justify-content: center;
+    }
+
+    .pagination-controls {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .pagination-button {
+        min-width: 75px;
+
+        padding: 0 8px;
+
+        font-size: 12px;
+    }
+
+    .pagination-page {
+        width: 32px;
+
+        height: 32px;
+    }
+
+    .pagination-info {
+        font-size: 12px;
+    }
+
+}
+
+/* =========================================
+   DOWNLOAD INVOICE BUTTON
+========================================= */
+
+.download-button {
+
+    border: none;
+
+    background: #e8f4ff;
+
+    color: #0b8fd3;
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 15px;
+
+    transition: 0.2s ease;
+
+}
+
+
+.download-button:hover {
+
+    background: #d5ecff;
+
+    transform: translateY(-1px);
+
+}
+
+
+.download-button:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+}
+
+/* =========================================
+   BILL ACTION BUTTONS
+========================================= */
+
+.action-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+
+    gap: 7px;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================
+   ACTION BUTTON COMMON STYLE
+========================================= */
+
+.action-buttons button {
+
+    width: 34px;
+
+    height: 34px;
+
+    min-width: 34px;
+
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   EDIT BUTTON
+========================================= */
+
+.action-buttons .edit-button {
+
+    border: 1px solid #bae6fd;
+
+    background: #f0f9ff;
+
+    color: #0369a1;
+
+}
+
+
+.action-buttons .edit-button:hover {
+
+    background: #e0f2fe;
+
+    border-color: #7dd3fc;
+
+}
+
+
+/* =========================================
+   DOWNLOAD BUTTON
+========================================= */
+
+.action-buttons .download-button {
+
+    border: 1px solid #bfdbfe;
+
+    background: #e8f4ff;
+
+    color: #0b8fd3;
+
+}
+
+
+.action-buttons .download-button:hover {
+
+    background: #d5ecff;
+
+    border-color: #93c5fd;
+
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.action-buttons .delete-button {
+
+    border: 1px solid #fecaca;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+
+}
+
+
+.action-buttons .delete-button:hover {
+
+    background: #fee2e2;
+
+    border-color: #fca5a5;
+
+}
+
+
+/* =========================================
+   ACTIONS TABLE CELL
+========================================= */
+
+.data-table th:last-child,
+.data-table td:last-child {
+
+    min-width: 125px;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================
+   PREVENT BUTTON WRAPPING
+========================================= */
+
+.data-table td:last-child .action-buttons {
+
+    width: max-content;
+
+}

@@ -1,0 +1,514 @@
+/* =========================================================
+   DOCTOR DETAILS PAGE
+========================================================= */
+
+.doctor-details-page {
+    width: 100%;
+}
+
+
+/* =========================================================
+   BACK LINK
+========================================================= */
+
+.doctor-details-back {
+    display: inline-flex;
+
+    align-items: center;
+
+    margin-bottom: 18px;
+
+    color: #168db5;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.doctor-details-back:hover {
+    color: #0c779b;
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.doctor-details-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #dfebf0;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(30, 80, 100, 0.06);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.doctor-details-header {
+    padding: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+
+    background: linear-gradient(
+        135deg,
+        #eef9fc,
+        #f8fcfe
+    );
+
+    border-bottom: 1px solid #dfebf0;
+}
+
+
+.doctor-details-avatar {
+    width: 100px;
+    height: 100px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dff3fa;
+
+    border: 1px solid #c3e5ef;
+
+    font-size: 48px;
+}
+
+
+.doctor-details-basic h1 {
+    margin: 0 0 7px;
+
+    color: #183b4d;
+
+    font-size: 26px;
+
+    font-weight: 700;
+}
+
+
+.doctor-details-basic p {
+    margin: 0 0 14px;
+
+    color: #168db5;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.doctor-details-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    background: #ecfaf3;
+
+    color: #25865b;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+.doctor-details-status span {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #27ae70;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.doctor-details-content {
+    padding: 30px;
+}
+
+
+.doctor-details-section {
+    margin-bottom: 30px;
+}
+
+
+.doctor-details-section:last-child {
+    margin-bottom: 0;
+}
+
+
+.doctor-details-section h2 {
+    margin: 0 0 20px;
+
+    color: #183b4d;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   INFORMATION GRID
+========================================================= */
+
+.doctor-details-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+
+.doctor-detail-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 17px;
+
+    border: 1px solid #e5eff3;
+
+    border-radius: 10px;
+
+    background: #fbfdfe;
+}
+
+
+.doctor-detail-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #eef8fb;
+
+    font-size: 18px;
+}
+
+
+.doctor-detail-item div {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.doctor-detail-item small {
+    color: #8297a0;
+
+    font-size: 10px;
+}
+
+
+.doctor-detail-item strong {
+    color: #365664;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.doctor-details-contact {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+
+.doctor-contact-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 17px;
+
+    border: 1px solid #e5eff3;
+
+    border-radius: 10px;
+
+    background: #fbfdfe;
+}
+
+
+.doctor-contact-item > span {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #eef8fb;
+
+    font-size: 17px;
+}
+
+
+.doctor-contact-item div {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.doctor-contact-item small {
+    color: #8297a0;
+
+    font-size: 10px;
+}
+
+
+.doctor-contact-item strong {
+    color: #365664;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.doctor-details-actions {
+    padding: 20px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    border-top: 1px solid #e7f0f3;
+
+    background: #fbfdfe;
+}
+
+
+.doctor-details-secondary,
+.doctor-details-primary {
+    min-height: 42px;
+
+    padding: 10px 18px;
+
+    box-sizing: border-box;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+.doctor-details-secondary {
+    color: #168db5;
+
+    background: #ffffff;
+
+    border: 1px solid #b9dce8;
+}
+
+
+.doctor-details-secondary:hover {
+    background: #eef9fc;
+}
+
+
+.doctor-details-primary {
+    color: #ffffff;
+
+    background: #159dcc;
+
+    border: 1px solid #159dcc;
+
+    box-shadow:
+        0 3px 8px rgba(21, 157, 204, 0.15);
+}
+
+
+.doctor-details-primary:hover {
+    background: #108bb6;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.doctor-details-error {
+    padding: 50px 25px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid #e5edf0;
+
+    border-radius: 14px;
+}
+
+
+.doctor-details-error-icon {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+.doctor-details-error h3 {
+    margin: 0 0 8px;
+
+    color: #344f5b;
+
+    font-size: 18px;
+}
+
+
+.doctor-details-error p {
+    margin: 0 0 20px;
+
+    color: #80929a;
+
+    font-size: 13px;
+}
+
+
+.doctor-back-button {
+    padding: 10px 17px;
+
+    border: 0;
+
+    border-radius: 8px;
+
+    background: #159dcc;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .doctor-details-header {
+        padding: 25px;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .doctor-details-grid,
+    .doctor-details-contact {
+        grid-template-columns: 1fr;
+    }
+
+
+    .doctor-details-actions {
+        flex-direction: column;
+    }
+
+
+    .doctor-details-secondary,
+    .doctor-details-primary {
+        width: 100%;
+    }
+
+}

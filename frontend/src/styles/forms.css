@@ -1,0 +1,941 @@
+/* =========================================
+   FORM CARD
+========================================= */
+
+.form-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #dceff5;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(55, 130, 155, 0.06);
+}
+
+
+/* =========================================
+   FORM CARD HEADER
+========================================= */
+
+.form-card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 24px 28px;
+
+    border-bottom: 1px solid #e3f1f6;
+}
+
+.form-card-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background: #eaf7fc;
+
+    color: #2990b5;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+}
+
+.form-card-header h3 {
+    margin: 0;
+
+    color: #183b4d;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+.form-card-header p {
+    margin: 4px 0 0;
+
+    color: #718793;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   FORM CARD BODY
+========================================= */
+
+.form-card-body {
+    padding: 28px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .form-card-header {
+        padding: 20px;
+    }
+
+    .form-card-body {
+        padding: 20px;
+    }
+
+}
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.form-group label {
+    margin-bottom: 7px;
+
+    color: #365563;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.form-group label span {
+    color: #2990b5;
+
+    margin-left: 3px;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 11px 13px;
+
+    border: 1px solid #cfe5ed;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #183b4d;
+
+    font-size: 13px;
+
+    transition: 0.2s ease;
+}
+
+.form-group input,
+.form-group select {
+    height: 44px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+
+    resize: vertical;
+
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #4aaed1;
+
+    box-shadow:
+        0 0 0 3px rgba(74, 174, 209, 0.10);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9aadb5;
+}
+
+.form-group input:disabled,
+.form-group select:disabled,
+.form-group textarea:disabled {
+    background: #f4fafc;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: auto;
+    }
+
+}
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.form-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    padding: 20px 28px;
+
+    background: #f7fcfe;
+
+    border-top: 1px solid #e3f1f6;
+}
+
+
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
+
+.primary-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 40px;
+
+    padding: 10px 17px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #4aaed1;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.primary-button:hover {
+    background: #3699bd;
+
+    transform: translateY(-1px);
+}
+
+.primary-button:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.cancel-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 40px;
+
+    padding: 10px 16px;
+
+    border: 1px solid #cfe5ed;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #55717e;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.cancel-button:hover {
+    background: #eef8fc;
+
+    border-color: #b9dce8;
+}
+
+.cancel-button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .form-actions {
+        padding: 18px;
+
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+
+}
+
+/* ==========================================
+   PAGE MESSAGES
+========================================== */
+
+.page-success {
+    margin-bottom: 18px;
+    padding: 12px 16px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    color: #15803d;
+    font-size: 13px;
+}
+
+.page-error {
+    margin-bottom: 18px;
+    padding: 12px 16px;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    color: #b91c1c;
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   FORM CARD
+========================================== */
+
+.form-card {
+    background: #ffffff;
+    border: 1px solid #e0f2fe;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 3px 12px rgba(14, 116, 144, 0.05);
+}
+
+
+.form-section {
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #e0f2fe;
+}
+
+
+.form-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+
+.form-section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+
+.form-section-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e0f2fe;
+    border-radius: 9px;
+
+    font-size: 19px;
+}
+
+
+.form-section-header h3 {
+    margin: 0 0 4px;
+
+    color: #1e293b;
+
+    font-size: 17px;
+}
+
+
+.form-section-header p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+.form-full-width {
+    grid-column: 1 / -1;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.form-group label {
+    color: #334155;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.form-group label span {
+    margin-left: 3px;
+
+    color: #0ea5e9;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 11px 13px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #1e293b;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 0 0 3px rgba(56, 189, 248, 0.12);
+}
+
+
+.form-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    padding-top: 4px;
+}
+
+
+.secondary-button {
+    padding: 10px 18px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.secondary-button:hover {
+    background: #f0f9ff;
+
+    border-color: #bae6fd;
+
+    color: #0369a1;
+}
+
+
+.primary-button:disabled,
+.secondary-button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 700px) {
+
+    .form-card {
+        padding: 18px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-full-width {
+        grid-column: auto;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}
+
+/* ==========================================
+   DETAILS PAGE
+========================================== */
+
+.details-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+
+.details-card {
+    background: #ffffff;
+    border: 1px solid #e0f2fe;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 3px 12px rgba(14, 116, 144, 0.05);
+}
+
+
+.doctor-profile-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0f2fe;
+}
+
+
+.doctor-large-avatar {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e0f2fe;
+    border-radius: 50%;
+
+    font-size: 32px;
+}
+
+
+.doctor-profile-header h2 {
+    margin: 0 0 5px;
+
+    color: #1e293b;
+    font-size: 24px;
+}
+
+
+.doctor-profile-header p {
+    margin: 0 0 7px;
+
+    color: #0284c7;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.details-id {
+    color: #64748b;
+    font-size: 12px;
+}
+
+
+.details-section {
+    padding: 25px 0;
+    border-bottom: 1px solid #e0f2fe;
+}
+
+
+.details-section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+
+.details-section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+
+.details-icon {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e0f2fe;
+    border-radius: 8px;
+
+    font-size: 17px;
+}
+
+
+.details-section-title h3 {
+    margin: 0 0 3px;
+
+    color: #1e293b;
+    font-size: 16px;
+}
+
+
+.details-section-title p {
+    margin: 0;
+
+    color: #64748b;
+    font-size: 12px;
+}
+
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+
+.details-item {
+    padding: 15px;
+
+    background: #f8fcff;
+
+    border: 1px solid #e0f2fe;
+
+    border-radius: 8px;
+}
+
+
+.details-item span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+.details-item strong {
+    display: block;
+
+    color: #1e293b;
+
+    font-size: 14px;
+
+    word-break: break-word;
+}
+
+
+@media (max-width: 700px) {
+
+    .details-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .details-actions button {
+        width: 100%;
+    }
+
+    .details-card {
+        padding: 18px;
+    }
+
+    .doctor-profile-header {
+        align-items: flex-start;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.management-form {
+    width: 100%;
+}
+
+.form-section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.form-section-title h3 {
+    margin: 0;
+    color: #0f172a;
+}
+
+.form-section-title p {
+    margin: 4px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.form-section-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #e0f2fe;
+    font-size: 22px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.management-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 90px;
+    padding: 12px 14px;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.management-form textarea:focus {
+    border-color: #7dd3fc;
+    box-shadow: 0 0 0 3px rgba(125, 211, 252, 0.12);
+}
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.profile-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.profile-summary-card {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e0f2fe;
+
+    font-size: 42px;
+}
+
+.profile-summary-card h2 {
+    margin: 0 0 6px;
+    color: #0f172a;
+    font-size: 21px;
+}
+
+.profile-summary-card p {
+    margin: 0 0 16px;
+    color: #64748b;
+    word-break: break-word;
+}
+
+.profile-role-badge {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #e0f2fe;
+    color: #0284c7;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.profile-form {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.profile-form .form-actions {
+    grid-column: 1 / -1;
+}
+
+.profile-form input:disabled {
+    background: #f8fafc;
+    color: #64748b;
+    cursor: not-allowed;
+}
+
+@media (max-width: 800px) {
+
+    .profile-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-form {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-form .form-actions {
+        grid-column: auto;
+    }
+}
+
+/* =========================================
+   BOOK APPOINTMENT PAGE
+========================================= */
+
+.book-appointment-header {
+    margin-bottom: 30px;
+}
+

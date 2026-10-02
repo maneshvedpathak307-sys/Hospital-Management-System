@@ -1,0 +1,306 @@
+/* =====================================================
+   PATIENT DETAILS PAGE
+===================================================== */
+
+.patient-details-page {
+    min-height: 100%;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.patient-details-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.patient-details-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #149ed0;
+    margin-bottom: 7px;
+}
+
+.patient-details-page-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #172033;
+}
+
+.patient-details-page-header p {
+    margin: 7px 0 0;
+    color: #7b8794;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   MAIN CARD
+===================================================== */
+
+.patient-details-card {
+    background: #ffffff;
+    border: 1px solid #e5edf3;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(31, 50, 70, 0.05);
+}
+
+
+/* =====================================================
+   PROFILE HEADER
+===================================================== */
+
+.patient-details-profile {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 30px;
+    background: linear-gradient(
+        135deg,
+        #f5fbff,
+        #ffffff
+    );
+    border-bottom: 1px solid #e7eef3;
+}
+
+.patient-details-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #e4f5fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    flex-shrink: 0;
+}
+
+.patient-details-basic h2 {
+    margin: 0 0 6px;
+    font-size: 25px;
+    color: #172033;
+}
+
+.patient-details-basic p {
+    margin: 0 0 12px;
+    color: #7b8794;
+    font-size: 14px;
+}
+
+.patient-details-badge {
+    display: inline-block;
+    padding: 6px 13px;
+    border-radius: 20px;
+    background: #e4f5fc;
+    color: #078ec4;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.patient-details-section {
+    padding: 30px;
+    border-bottom: 1px solid #e9eef2;
+}
+
+.patient-section-heading {
+    margin-bottom: 22px;
+}
+
+.patient-section-heading h3 {
+    margin: 0;
+    color: #172033;
+    font-size: 19px;
+}
+
+.patient-section-heading p {
+    margin: 5px 0 0;
+    color: #8994a0;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   DETAILS GRID
+===================================================== */
+
+.patient-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+
+/* =====================================================
+   DETAIL ITEM
+===================================================== */
+
+.patient-detail-item {
+    min-height: 80px;
+    padding: 17px;
+    border: 1px solid #e5edf2;
+    border-radius: 11px;
+    background: #fbfdfe;
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.patient-detail-full {
+    grid-column: 1 / -1;
+}
+
+.patient-detail-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    background: #e8f6fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.patient-detail-item div {
+    min-width: 0;
+}
+
+.patient-detail-item small {
+    display: block;
+    margin-bottom: 5px;
+    color: #8994a0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.patient-detail-item strong {
+    display: block;
+    color: #273447;
+    font-size: 14px;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.patient-details-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 22px 30px;
+    background: #fbfdfe;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.patient-back-button,
+.patient-secondary-button {
+    border: 1px solid #d9e5ec;
+    background: #ffffff;
+    color: #516170;
+    border-radius: 8px;
+    padding: 10px 17px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.patient-back-button:hover,
+.patient-secondary-button:hover {
+    border-color: #18a7dc;
+    color: #0798cf;
+    background: #f4fbfe;
+}
+
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.patient-details-error {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 45px 30px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e5edf3;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(31, 50, 70, 0.05);
+}
+
+.patient-error-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: #fff5e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+}
+
+.patient-details-error h3 {
+    margin: 0 0 8px;
+    color: #172033;
+}
+
+.patient-details-error p {
+    margin: 0 0 22px;
+    color: #7b8794;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .patient-details-page-header {
+        flex-direction: column;
+    }
+
+    .patient-details-profile {
+        padding: 22px;
+    }
+
+    .patient-details-section {
+        padding: 22px;
+    }
+
+    .patient-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .patient-detail-full {
+        grid-column: auto;
+    }
+
+    .patient-details-footer {
+        padding: 18px 22px;
+    }
+
+}

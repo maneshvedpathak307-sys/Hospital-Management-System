@@ -1,0 +1,612 @@
+/* =========================================
+   EMERGENCY PAGE HEADER
+========================================= */
+
+.emergency-page-header {
+
+    margin-bottom: 30px;
+
+}
+
+
+.emergency-page-header h1 {
+
+    margin: 0 0 8px;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: var(--text-primary);
+
+}
+
+
+.emergency-page-header p {
+
+    margin: 0;
+
+    color: var(--text-muted);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   EMERGENCY SECTION
+========================================= */
+
+.emergency-section {
+
+    margin-bottom: 45px;
+
+}
+
+
+/* =========================================
+   THREE EMERGENCY CARDS
+========================================= */
+
+.emergency-card-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+
+    /*
+     * Extra space between the
+     * three emergency cards and
+     * Important Emergency Contacts.
+     */
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =========================================
+   EMERGENCY CARD
+========================================= */
+
+.emergency-card {
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 28px;
+
+    min-height: 360px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: 0.2s ease;
+
+}
+
+
+.emergency-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* =========================================
+   CARD ICON
+========================================= */
+
+.emergency-card-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.emergency-card h3 {
+
+    margin: 0 0 14px;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    color: var(--text-primary);
+
+}
+
+
+/* =========================================
+   CARD DESCRIPTION
+========================================= */
+
+.emergency-card p {
+
+    margin: 0;
+
+    color: var(--text-muted);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    min-height: 75px;
+
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.emergency-contact {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: auto;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.emergency-contact span {
+
+    color: var(--text-muted);
+
+    font-size: 13px;
+
+}
+
+
+.emergency-contact strong {
+
+    font-size: 16px;
+
+    color: var(--text-primary);
+
+}
+
+
+/* =========================================
+   CALL BUTTON
+========================================= */
+
+.emergency-call-button {
+
+    display: block;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin-top: 20px;
+
+    padding: 13px 16px;
+
+    border-radius: 8px;
+
+    background: #dc2626;
+
+    color: white;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.2s ease;
+
+}
+
+
+.emergency-call-button:hover {
+
+    background: #b91c1c;
+
+}
+
+
+/* =========================================
+   IMPORTANT EMERGENCY CONTACTS
+========================================= */
+
+.emergency-section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================================
+   PHONE ICON
+========================================= */
+
+.emergency-section-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: transparent;
+
+    border-radius: 0;
+
+    font-size: 25px;
+
+    flex-shrink: 0;
+
+}
+
+
+/* =========================================
+   CONTACTS TITLE
+========================================= */
+
+.emergency-section-title h2 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: var(--text-primary);
+
+}
+
+
+/* =========================================
+   REMOVE CONTACT SUBTITLE
+========================================= */
+
+.emergency-section-title p {
+
+    display: none;
+
+}
+
+
+/* =========================================
+   CONTACTS CARD
+========================================= */
+
+.emergency-contacts-card {
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   CONTACT ROW
+========================================= */
+
+.emergency-contact-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 24px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.emergency-contact-row:last-child {
+
+    border-bottom: none;
+
+}
+
+
+/* =========================================
+   CONTACT NAME
+========================================= */
+
+.emergency-contact-row > div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.contact-icon {
+
+    font-size: 23px;
+
+    flex-shrink: 0;
+
+}
+
+
+.emergency-contact-row strong {
+
+    color: var(--text-primary);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================
+   EMERGENCY NUMBERS
+   BLACK COLOR
+========================================= */
+
+.emergency-contact-row a {
+
+    color: #111827;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================
+   PHONE NUMBER HOVER
+========================================= */
+
+.emergency-contact-row a:hover {
+
+    color: #000000;
+
+    text-decoration: underline;
+
+}
+
+
+/* =========================================
+   HOSPITAL INFORMATION
+========================================= */
+
+.emergency-information-card {
+
+    display: flex;
+
+    gap: 20px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 26px;
+
+}
+
+
+.emergency-information-icon {
+
+    font-size: 42px;
+
+    flex-shrink: 0;
+
+}
+
+
+.emergency-information-card h2 {
+
+    margin: 0 0 10px;
+
+    color: var(--text-primary);
+
+}
+
+
+.emergency-information-card p {
+
+    margin: 0;
+
+    color: var(--text-muted);
+
+    line-height: 1.6;
+
+}
+
+
+.emergency-info-list {
+
+    display: grid;
+
+    gap: 10px;
+
+    margin-top: 18px;
+
+}
+
+
+.emergency-info-list div {
+
+    color: var(--text-muted);
+
+    font-size: 14px;
+
+}
+
+
+.emergency-info-list strong {
+
+    margin-right: 5px;
+
+    color: var(--text-primary);
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .emergency-card-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .emergency-card {
+
+        min-height: 330px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .emergency-page-header h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    .emergency-page-header p {
+
+        font-size: 13px;
+
+    }
+
+
+    .emergency-card {
+
+        min-height: 320px;
+
+        padding: 22px;
+
+    }
+
+
+    .emergency-card-icon {
+
+        font-size: 35px;
+
+    }
+
+
+    .emergency-section-title {
+
+        gap: 10px;
+
+    }
+
+
+    .emergency-section-icon {
+
+        width: 34px;
+
+        height: 34px;
+
+        font-size: 22px;
+
+    }
+
+
+    .emergency-section-title h2 {
+
+        font-size: 20px;
+
+    }
+
+
+    .emergency-contact-row {
+
+        padding: 18px;
+
+        gap: 15px;
+
+    }
+
+
+    .emergency-contact-row strong {
+
+        font-size: 13px;
+
+    }
+
+
+    .emergency-contact-row a {
+
+        font-size: 13px;
+
+    }
+
+
+    .emergency-information-card {
+
+        flex-direction: column;
+
+    }
+
+}

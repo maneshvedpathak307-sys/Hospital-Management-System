@@ -1,0 +1,221 @@
+/* =========================================
+   APPLICATION LAYOUT
+========================================= */
+
+.app-layout {
+    width: 100%;
+    min-height: 100vh;
+
+    display: block;
+
+    background: var(--background);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   FIXED SIDEBAR
+========================================= */
+
+.app-layout > .sidebar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: var(--sidebar-width);
+
+    z-index: 1000;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   MAIN AREA
+========================================= */
+
+.main-area {
+    width: auto;
+
+    min-height: 100vh;
+
+    margin-left: var(--sidebar-width);
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    min-width: 0;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.main-area > .navbar {
+    width: 100%;
+
+    flex-shrink: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PAGE CONTENT
+========================================= */
+
+.page-content {
+    width: 100%;
+
+    flex: 1;
+
+    min-width: 0;
+
+    min-height:
+        calc(100vh - var(--navbar-height));
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background: var(--background);
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   PAGE CONTAINER
+========================================= */
+
+.page-container {
+    width: 100%;
+
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   CONTENT CONTAINER
+========================================= */
+
+.content-container {
+    width: 100%;
+
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.page-header {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PAGE HEADER ACTIONS
+========================================= */
+
+.page-header-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .app-layout > .sidebar {
+
+        width: 78px;
+    }
+
+
+    .main-area {
+
+        margin-left: 78px;
+    }
+
+
+    .page-content {
+
+        padding: 24px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .app-layout > .sidebar {
+
+        width: 0;
+    }
+
+
+    .main-area {
+
+        margin-left: 0;
+
+        width: 100%;
+    }
+
+
+    .page-content {
+
+        padding: 18px;
+    }
+
+
+    .page-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+}

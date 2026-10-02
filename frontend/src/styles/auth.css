@@ -1,0 +1,554 @@
+/* =========================================
+   AUTH PAGE
+========================================= */
+
+.auth-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background: #f7fbff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   AUTH CARD
+========================================= */
+
+.auth-card {
+    width: 100%;
+    max-width: 460px;
+
+    background: #ffffff;
+
+    border: 1px solid #dcecf8;
+
+    border-radius: 16px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 8px 30px rgba(37, 150, 190, 0.10);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.auth-logo {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+
+.auth-logo-icon {
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #e7f6fd;
+
+    font-size: 32px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.auth-header {
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+
+.auth-header h1 {
+    margin: 0;
+
+    color: #17324d;
+
+    font-size: 25px;
+
+    line-height: 1.3;
+}
+
+
+.auth-header p {
+    margin: 9px 0 0;
+
+    color: #718096;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.auth-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.form-group label {
+    color: #29445c;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.form-label-row {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #cfe1ee;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #263b4d;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+.form-group input::placeholder {
+    color: #9aaabd;
+}
+
+
+.form-group input:focus {
+    border-color: #55bde5;
+
+    box-shadow:
+        0 0 0 3px rgba(85, 189, 229, 0.12);
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.auth-link-button {
+    border: none;
+
+    background: transparent;
+
+    color: #1597c5;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    padding: 0;
+}
+
+
+.auth-link-button:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.auth-error {
+    margin-bottom: 18px;
+
+    padding: 12px 14px;
+
+    border: 1px solid #f2caca;
+
+    border-radius: 8px;
+
+    background: #fff7f7;
+
+    color: #b42318;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
+
+.auth-primary-button {
+    width: 100%;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 13px;
+
+    background: #39a9d6;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.auth-primary-button:hover {
+    background: #2697c4;
+}
+
+
+.auth-primary-button:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.auth-divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 25px 0 18px;
+
+    color: #91a2b2;
+
+    font-size: 13px;
+}
+
+
+.auth-divider::before,
+.auth-divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #e1edf5;
+}
+
+
+.auth-divider span {
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   SECONDARY BUTTON
+========================================= */
+
+.auth-secondary-button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #67c3e6;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #168fbe;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.auth-secondary-button:hover {
+    background: #eefaff;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.auth-footer {
+    margin-top: 28px;
+
+    text-align: center;
+}
+
+
+.auth-footer p {
+    margin: 0;
+
+    color: #526b7d;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.auth-footer span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #9aaabd;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .auth-page {
+        padding: 18px;
+    }
+
+    .auth-card {
+        padding: 28px 22px;
+    }
+
+    .auth-header h1 {
+        font-size: 22px;
+    }
+}
+
+/* =========================================
+   REGISTER PAGE
+========================================= */
+
+.auth-register-card {
+    max-width: 600px;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.auth-section-title {
+    margin-top: 8px;
+    margin-bottom: 2px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid #e1edf5;
+
+    color: #214b68;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   TWO COLUMN
+========================================= */
+
+.auth-two-column {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.form-group select {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #cfe1ee;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #263b4d;
+
+    font-size: 14px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+.form-group select:focus {
+    border-color: #55bde5;
+
+    box-shadow:
+        0 0 0 3px rgba(85, 189, 229, 0.12);
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #cfe1ee;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #263b4d;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    resize: vertical;
+}
+
+
+.form-group textarea:focus {
+    border-color: #55bde5;
+
+    box-shadow:
+        0 0 0 3px rgba(85, 189, 229, 0.12);
+}
+
+
+/* =========================================
+   SUCCESS
+========================================= */
+
+.auth-success {
+    margin-bottom: 18px;
+
+    padding: 12px 14px;
+
+    border: 1px solid #b9e4f4;
+
+    border-radius: 8px;
+
+    background: #f0fbff;
+
+    color: #087da5;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   REGISTER RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .auth-register-card {
+        max-width: 100%;
+    }
+
+    .auth-two-column {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   AUTH INFORMATION BOX
+========================================= */
+
+.auth-info {
+    margin-bottom: 20px;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ccebf7;
+
+    border-radius: 8px;
+
+    background: #f2fbff;
+
+    color: #4d6b7d;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
