@@ -6,7 +6,7 @@ The system provides separate portals for **Admin, Doctor, and Patient** users wi
 
 ---
 
-# 🚀 Project Overview
+## 🚀 Project Overview
 
 The Hospital Management System provides an easy-to-use platform for managing hospital operations digitally.
 
@@ -115,7 +115,7 @@ Admin can:
 - Monitor Appointment Status
 - Manage Hospital Appointments
 
-Appointment statuses include:
+### Appointment Status
 
 ```text
 PENDING
@@ -131,7 +131,7 @@ Search Medicines
 Edit Medicines
 Delete Medicines
 Manage Medicine Information
-Medicine information can include:
+Medicine Information
 Medicine Name
 Generic Name
 Dosage
@@ -209,7 +209,7 @@ View Appointment Details
 Approve Appointments
 Reject Appointments
 Complete Appointments
-Appointment workflow:
+Appointment Workflow
 PENDING
    ↓
 APPROVED
@@ -271,9 +271,7 @@ Upcoming Appointments
 Prescriptions
 Pending Bills
 Next Appointment
-Example dashboard:
 My Overview
-
 Total Appointments
 Upcoming Appointments
 Prescriptions
@@ -375,7 +373,7 @@ Check User Role
               ├── Profile
               └── Emergency
 🏗️ Project Architecture
-The Hospital Management System follows a full-stack architecture.
+The Hospital Management System is developed using a full-stack architecture.
 Hospital Management System
 │
 ├── Frontend
@@ -386,7 +384,7 @@ Hospital Management System
 │
 └── Database
     └── MySQL
-The React frontend communicates with the Spring Boot backend using REST APIs.
+The application uses a REST API architecture for communication between the React frontend and Spring Boot backend.
 🛠️ Technology Stack
 Frontend
 React.js
@@ -400,9 +398,9 @@ Backend
 Java 21
 Spring Boot 3.5.4
 Spring Web
+Spring Data JPA
 Spring Security
 JWT Authentication
-Spring Data JPA
 Hibernate
 Maven
 REST API
@@ -464,22 +462,22 @@ Hospital-Management-System/
 │   ├── 09-Admin_Appointments.jpeg
 │   ├── 10-Admin_Medicines.jpeg
 │   ├── 11-Admin_Billing.jpeg
-│   ├── 12-Admin Bill_pdf.jpeg
+│   ├── 12-Admin_Bill_pdf.jpeg
 │   ├── 13-Admin_Reports.jpeg
-│   ├── 14-Admin Report_pdf.jpeg
+│   ├── 14-Admin_Report_pdf.jpeg
 │   ├── 15-Admin_Profile.jpeg
 │   ├── 16-Doctor_Dashboard.jpeg
 │   ├── 17-Doctor_Patients.jpeg
 │   ├── 18-Doctor_Appointments.jpeg
 │   ├── 19-Doctor_Prescription.jpeg
 │   ├── 20-Doctor_Report.jpeg
-│   ├── 21-Doctor Report_pdf.jpeg
+│   ├── 21-Doctor_Report_pdf.jpeg
 │   ├── 22-Doctor_Profile.jpeg
 │   ├── 23-Patient_Dashboard.jpeg
 │   ├── 24-Patient_Doctors.jpeg
 │   ├── 25-Patient_Appointments.jpeg
 │   ├── 26-Patient_Prescription.jpeg
-│   ├── 27-Patient Prescription_pdf.jpeg
+│   ├── 27-Patient_Prescription_pdf.jpeg
 │   ├── 28-Patient_Bill.jpeg
 │   ├── 29-Patient_Profile.jpeg
 │   └── 30-Emergency_Page.jpeg
@@ -487,7 +485,7 @@ Hospital-Management-System/
 ├── .gitignore
 └── README.md
 🗄️ Database
-The application uses MySQL for storing hospital and user information.
+The application uses MySQL to store hospital and user information.
 Main Database Entities
 users
 patients
@@ -559,7 +557,6 @@ Patient details
 Patient profile
 Patient information
 🏢 Department Management
-The application provides APIs for:
 GET    /admin/departments
 POST   /admin/departments
 PUT    /admin/departments/{id}
@@ -625,7 +622,6 @@ Protected API Access
 👥 Role-Based Access
 The system provides different access levels based on user roles.
 ADMIN
-Admin can access:
 Dashboard
 Doctors
 Patients
@@ -637,7 +633,6 @@ Reports
 Analytics
 Profile
 DOCTOR
-Doctor can access:
 Dashboard
 Patients
 Appointments
@@ -645,7 +640,6 @@ Prescriptions
 Reports
 Profile
 PATIENT
-Patient can access:
 Dashboard
 Doctors
 Appointments
@@ -674,7 +668,6 @@ Payment Method
 Payment Date
 A bill with an amount greater than the paid amount is considered pending.
 📅 Appointment Management Flow
-The appointment process follows:
 Patient Books Appointment
           ↓
        PENDING
@@ -686,7 +679,6 @@ Patient Books Appointment
   COMPLETED
 Patients can also cancel applicable appointments.
 💊 Prescription Flow
-The prescription process follows:
 Doctor Opens Appointment
           ↓
      Patient Details
@@ -735,7 +727,8 @@ npm start
 The frontend runs on:
 http://localhost:3000
 📸 Project Screenshots
-🔐 Authentication
+All project screenshots are stored in the screenshots folder.
+🔐 Authentication Screens
 1. Login Page
 �
 2. Create Account
