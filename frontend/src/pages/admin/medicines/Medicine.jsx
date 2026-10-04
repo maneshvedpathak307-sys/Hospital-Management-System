@@ -446,7 +446,11 @@ function Medicine() {
 
                     <SearchBox
                         value={search}
-                        onChange={setSearch}
+                        onChange={(e) =>
+                            setSearch(
+                                e.target.value
+                            )
+                        }
                         placeholder="Search medicines..."
                     />
 

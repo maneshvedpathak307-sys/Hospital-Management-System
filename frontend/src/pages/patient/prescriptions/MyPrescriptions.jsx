@@ -505,17 +505,6 @@ function MyPrescriptions() {
     // =====================================================
     // DELETE PRESCRIPTION
     // =====================================================
-    //
-    // IMPORTANT:
-    // Patient can remove ANY visible prescription.
-    //
-    // Previous
-    // Today
-    // Future
-    //
-    // No date restriction.
-    //
-    // =====================================================
 
     const handleDeletePrescription = async (
         prescription
@@ -720,7 +709,11 @@ function MyPrescriptions() {
 
                         <SearchBox
                             value={search}
-                            onChange={setSearch}
+                            onChange={(e) =>
+                                setSearch(
+                                    e.target.value
+                                )
+                            }
                             placeholder="Search prescriptions..."
                         />
 
@@ -1105,13 +1098,7 @@ function MyPrescriptions() {
                                                             </button>
 
 
-                                                            {/* =================================================
-                                                                DELETE
-                                                            =================================================
-                                                            
-                                                            Delete is now available
-                                                            for every prescription.
-                                                            ================================================= */}
+                                                            {/* DELETE */}
 
                                                             <button
                                                                 type="button"

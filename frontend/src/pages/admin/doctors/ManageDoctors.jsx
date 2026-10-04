@@ -554,9 +554,9 @@ function ManageDoctors() {
                     {/* SEARCH */}
 
                     <SearchBox
-                        value={search}
-                        onChange={setSearch}
-                        placeholder="Search doctors..."
+                      value={search}
+                      onChange={(e) => setSearch(e.target.value)}
+                      placeholder="Search doctors..."
                     />
 
 

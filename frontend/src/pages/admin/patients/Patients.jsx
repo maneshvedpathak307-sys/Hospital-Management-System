@@ -66,6 +66,7 @@ function Patients() {
 
             setError("");
 
+
             const response =
                 await PatientManagementService
                     .getAllPatients();
@@ -105,6 +106,7 @@ function Patients() {
 
 
             setError(
+
                 error?.response?.data?.message ||
 
                 (
@@ -112,6 +114,7 @@ function Patients() {
                         ? error.response.data
                         : "Unable to load patients."
                 )
+
             );
 
         } finally {
@@ -287,6 +290,7 @@ function Patients() {
 
         const pages = [];
 
+
         for (
             let page = 1;
             page <= totalPages;
@@ -296,6 +300,7 @@ function Patients() {
             pages.push(page);
 
         }
+
 
         return pages;
 
@@ -379,10 +384,13 @@ function Patients() {
 
                 <SearchBox
                     value={searchTerm}
-                    onChange={setSearchTerm}
+                    onChange={(e) =>
+                        setSearchTerm(
+                            e.target.value
+                        )
+                    }
                     placeholder="Search patients..."
                 />
-
 
             </div>
 
@@ -423,8 +431,6 @@ function Patients() {
                             <thead>
 
                                 <tr>
-
-                                    {/* SERIAL NUMBER */}
 
                                     <th>
                                         S.No.
@@ -480,26 +486,24 @@ function Patients() {
                                         >
 
 
-                                            {/* =================
-                                                SERIAL NUMBER
-                                            ================= */}
+                                            {/* SERIAL NUMBER */}
 
                                             <td>
 
                                                 <strong>
+
                                                     {
                                                         startIndex +
                                                         index +
                                                         1
                                                     }
+
                                                 </strong>
 
                                             </td>
 
 
-                                            {/* =================
-                                                PATIENT
-                                            ================= */}
+                                            {/* PATIENT */}
 
                                             <td>
 
@@ -524,9 +528,7 @@ function Patients() {
                                             </td>
 
 
-                                            {/* =================
-                                                AGE
-                                            ================= */}
+                                            {/* AGE */}
 
                                             <td>
 
@@ -538,9 +540,7 @@ function Patients() {
                                             </td>
 
 
-                                            {/* =================
-                                                GENDER
-                                            ================= */}
+                                            {/* GENDER */}
 
                                             <td>
 
@@ -552,9 +552,7 @@ function Patients() {
                                             </td>
 
 
-                                            {/* =================
-                                                PHONE
-                                            ================= */}
+                                            {/* PHONE */}
 
                                             <td>
 
@@ -566,9 +564,7 @@ function Patients() {
                                             </td>
 
 
-                                            {/* =================
-                                                EMAIL
-                                            ================= */}
+                                            {/* EMAIL */}
 
                                             <td>
 
@@ -581,9 +577,7 @@ function Patients() {
                                             </td>
 
 
-                                            {/* =================
-                                                DISEASE
-                                            ================= */}
+                                            {/* DISEASE */}
 
                                             <td>
 
@@ -595,9 +589,7 @@ function Patients() {
                                             </td>
 
 
-                                            {/* =================
-                                                ACTIONS
-                                            ================= */}
+                                            {/* ACTIONS */}
 
                                             <td>
 
@@ -646,9 +638,7 @@ function Patients() {
                     <div className="table-pagination">
 
 
-                        {/* =================================
-                            TOTAL PATIENTS
-                        ================================= */}
+                        {/* TOTAL PATIENTS */}
 
                         <div className="pagination-total">
 
@@ -663,9 +653,7 @@ function Patients() {
                         </div>
 
 
-                        {/* =================================
-                            PAGINATION CONTROLS
-                        ================================= */}
+                        {/* PAGINATION CONTROLS */}
 
                         <div className="pagination-controls">
 
@@ -766,7 +754,6 @@ function Patients() {
                 </div>
 
             )}
-
 
         </div>
 

@@ -125,11 +125,13 @@ function Department() {
                     .trim()
                     .toLowerCase();
 
+
             if (!searchText) {
 
                 return true;
 
             }
+
 
             return (
 
@@ -172,19 +174,23 @@ function Department() {
     const totalDepartments =
         filteredDepartments.length;
 
+
     const totalPages =
         Math.ceil(
             totalDepartments /
             departmentsPerPage
         );
 
+
     const startIndex =
         (currentPage - 1) *
         departmentsPerPage;
 
+
     const endIndex =
         startIndex +
         departmentsPerPage;
+
 
     const currentDepartments =
         filteredDepartments.slice(
@@ -238,6 +244,7 @@ function Department() {
 
         const pages = [];
 
+
         for (
             let page = 1;
             page <= totalPages;
@@ -247,6 +254,7 @@ function Department() {
             pages.push(page);
 
         }
+
 
         return pages;
 
@@ -264,16 +272,19 @@ function Department() {
                 "Are you sure you want to delete this department?"
             );
 
+
         if (!confirmed) {
 
             return;
 
         }
 
+
         try {
 
             setError("");
             setSuccess("");
+
 
             /*
              * IMPORTANT:
@@ -319,6 +330,7 @@ function Department() {
                         department.id !== id
                 );
 
+
             const remainingPages =
                 Math.ceil(
                     remainingDepartments.length /
@@ -350,7 +362,9 @@ function Department() {
                 error
             );
 
+
             setError(
+
                 error?.response?.data?.message ||
 
                 (
@@ -358,6 +372,7 @@ function Department() {
                         ? error.response.data
                         : "Unable to delete department."
                 )
+
             );
 
         }
@@ -446,11 +461,16 @@ function Department() {
 
                 <div className="table-toolbar">
 
+
                     {/* SEARCH */}
 
                     <SearchBox
                         value={search}
-                        onChange={setSearch}
+                        onChange={(e) =>
+                            setSearch(
+                                e.target.value
+                            )
+                        }
                         placeholder="Search departments..."
                     />
 
@@ -483,11 +503,15 @@ function Department() {
                     <div className="empty-state">
 
                         <div className="empty-icon">
+
                             🏢
+
                         </div>
 
                         <h3>
+
                             No departments found
+
                         </h3>
 
                         <p>
@@ -514,13 +538,10 @@ function Department() {
 
                             <table className="data-table">
 
+
                                 <thead>
 
                                     <tr>
-
-                                        {/* CHANGED:
-                                            ID → S.No.
-                                        */}
 
                                         <th>
                                             S.No.
@@ -557,45 +578,18 @@ function Department() {
 
                                                 {/* =================================
                                                     SERIAL NUMBER
-                                                =================================
-                                                
-                                                This is NOT the MySQL ID.
-
-                                                Example:
-
-                                                Page 1:
-                                                1
-                                                2
-                                                3
-                                                4
-                                                5
-
-                                                Page 2:
-                                                6
-                                                7
-                                                8
-                                                9
-                                                10
-
-                                                If department #2 is deleted,
-                                                the displayed numbers become:
-
-                                                1
-                                                2
-                                                3
-                                                4
-
-                                                automatically.
                                                 ================================= */}
 
                                                 <td>
 
                                                     <strong>
+
                                                         {
                                                             startIndex +
                                                             index +
                                                             1
                                                         }
+
                                                     </strong>
 
                                                 </td>
@@ -707,11 +701,16 @@ function Department() {
                             <div className="pagination-total">
 
                                 <strong>
+
                                     Total Departments :
+
                                 </strong>
 
+
                                 <span>
+
                                     {totalDepartments}
+
                                 </span>
 
                             </div>
@@ -724,9 +723,7 @@ function Department() {
                             <div className="pagination-controls">
 
 
-                                {/* =================================
-                                    PREVIOUS
-                                ================================= */}
+                                {/* PREVIOUS */}
 
                                 <button
                                     type="button"
@@ -745,9 +742,7 @@ function Department() {
                                 </button>
 
 
-                                {/* =================================
-                                    PAGE NUMBERS
-                                ================================= */}
+                                {/* PAGE NUMBERS */}
 
                                 {totalPages > 0 && (
 
@@ -783,9 +778,7 @@ function Department() {
                                 )}
 
 
-                                {/* =================================
-                                    PAGE INFORMATION
-                                ================================= */}
+                                {/* PAGE INFORMATION */}
 
                                 <span className="pagination-info">
 
@@ -799,9 +792,7 @@ function Department() {
                                 </span>
 
 
-                                {/* =================================
-                                    NEXT
-                                ================================= */}
+                                {/* NEXT */}
 
                                 <button
                                     type="button"

@@ -426,18 +426,6 @@ function MyAppointments() {
     // =====================================================
     // DELETE APPOINTMENT
     // =====================================================
-    //
-    // IMPORTANT:
-    // Patient can remove ANY visible appointment:
-    //
-    // Previous
-    // Today
-    // Upcoming
-    //
-    // The backend hides the appointment only for
-    // the logged-in patient.
-    //
-    // =====================================================
 
     const handleDeleteAppointment = async (
         appointment
@@ -683,7 +671,11 @@ function MyAppointments() {
 
                         <SearchBox
                             value={search}
-                            onChange={setSearch}
+                            onChange={(e) =>
+                                setSearch(
+                                    e.target.value
+                                )
+                            }
                             placeholder="Search appointments..."
                         />
 
@@ -1097,13 +1089,7 @@ function MyAppointments() {
                                                             </button>
 
 
-                                                            {/* =================================================
-                                                                DELETE
-                                                            =================================================
-                                                            
-                                                            Delete is now available
-                                                            for every appointment.
-                                                            ================================================= */}
+                                                            {/* DELETE */}
 
                                                             <button
                                                                 type="button"

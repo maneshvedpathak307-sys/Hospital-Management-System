@@ -37,26 +37,41 @@ public class DoctorServiceImpl implements DoctorService {
     @Transactional
     public String createDoctor(DoctorCreateRequest request) {
 
-        // Check login email
+        // =====================================================
+        // CHECK LOGIN EMAIL
+        // =====================================================
+
         if (userRepository.existsByLoginEmail(
                 request.getLoginEmail())) {
 
             throw new RuntimeException(
-                    "Login email already registered");
+                    "This login email is already registered. "
+                    + "Please use a different email address."
+            );
         }
 
-        // Find department
+        // =====================================================
+        // FIND DEPARTMENT
+        // =====================================================
+
         Department department =
                 departmentRepository.findById(
                         request.getDepartmentId()
                 ).orElseThrow(() ->
                         new RuntimeException(
-                                "Department not found"));
+                                "Department not found"
+                        )
+                );
 
-        // Create User account
+        // =====================================================
+        // CREATE USER ACCOUNT
+        // =====================================================
+
         User user = new User();
 
-        user.setLoginEmail(request.getLoginEmail());
+        user.setLoginEmail(
+                request.getLoginEmail()
+        );
 
         user.setPassword(
                 passwordEncoder.encode(
@@ -64,33 +79,54 @@ public class DoctorServiceImpl implements DoctorService {
                 )
         );
 
-        user.setRole(Role.DOCTOR);
+        user.setRole(
+                Role.DOCTOR
+        );
 
-        user.setEnabled(true);
+        user.setEnabled(
+                true
+        );
 
         User savedUser =
                 userRepository.save(user);
 
-        // Create Doctor
+        // =====================================================
+        // CREATE DOCTOR
+        // =====================================================
+
         Doctor doctor = new Doctor();
 
         doctor.setDoctorName(
-                request.getDoctorName());
+                request.getDoctorName()
+        );
 
         doctor.setSpecialization(
-                request.getSpecialization());
+                request.getSpecialization()
+        );
 
         doctor.setEmail(
-                request.getEmail());
+                request.getEmail()
+        );
 
         doctor.setPhone(
-                request.getPhone());
+                request.getPhone()
+        );
 
-        doctor.setUser(savedUser);
+        doctor.setUser(
+                savedUser
+        );
 
-        doctor.setDepartment(department);
+        doctor.setDepartment(
+                department
+        );
 
-        doctorRepository.save(doctor);
+        doctorRepository.save(
+                doctor
+        );
+
+        // =====================================================
+        // SUCCESS
+        // =====================================================
 
         return "Doctor created successfully";
     }

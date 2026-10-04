@@ -57,7 +57,7 @@ function AdminAppointments() {
 
     /* =========================================
        GET TODAY'S DATE
-       
+
        IMPORTANT:
        Do not use toISOString() here because
        UTC conversion can change the date.
@@ -521,7 +521,11 @@ function AdminAppointments() {
 
                         <SearchBox
                             value={search}
-                            onChange={setSearch}
+                            onChange={(e) =>
+                                setSearch(
+                                    e.target.value
+                                )
+                            }
                             placeholder="Search today's appointments..."
                         />
 
@@ -579,11 +583,15 @@ function AdminAppointments() {
                     <div className="empty-state">
 
                         <div className="empty-icon">
+
                             📅
+
                         </div>
 
                         <h3>
+
                             No appointments for today
+
                         </h3>
 
                         <p>

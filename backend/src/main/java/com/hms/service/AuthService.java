@@ -158,13 +158,12 @@ public class AuthService {
         // ==========================================
 
         if (userRepository.existsByLoginEmail(
-                loginEmail)) {
+        loginEmail)) {
 
-            throw new RuntimeException(
-                    "Login email already registered"
-            );
-        }
-
+    throw new RuntimeException(
+            "Email already registered. Please use a different email address."
+    );
+}
 
         // ==========================================
         // CREATE USER

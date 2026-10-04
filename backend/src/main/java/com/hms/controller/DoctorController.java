@@ -587,6 +587,10 @@ public class DoctorController {
         LocalDate today =
                 LocalDate.now();
 
+        // =================================================
+        // TODAY'S PATIENTS
+        // =================================================
+
         List<Patient> patients =
                 appointmentRepository
                         .findPatientsByDoctorIdAndAppointmentDate(
@@ -597,11 +601,21 @@ public class DoctorController {
         int myPatients =
                 patients.size();
 
+        // =================================================
+        // ALL DOCTOR APPOINTMENTS
+        // =================================================
+
         List<Appointment> appointments =
                 appointmentRepository
                         .findByDoctorIdOrderByAppointmentDateAscAppointmentTimeAsc(
                                 doctorId
                         );
+
+        // =================================================
+        // TODAY'S APPOINTMENTS
+        //
+        // Only appointments whose date is today.
+        // =================================================
 
         long todayAppointments =
                 appointments.stream()
@@ -617,24 +631,46 @@ public class DoctorController {
 
         // =================================================
         // PENDING APPOINTMENTS
-        // Only TODAY + FUTURE appointments are counted.
-        // Past pending appointments are not counted.
+        //
+        // IMPORTANT:
+        //
+        // Only PENDING appointments are counted.
+        //
+        // Appointment date must be:
+        //
+        // TODAY or FUTURE
+        //
+        // Previous dates are NOT counted.
+        //
+        // Example:
+        //
+        // 03/10/2026 -> ❌ Previous
+        // 04/10/2026 -> ✅ Today
+        // 05/10/2026 -> ✅ Future
+        // 06/10/2026 -> ✅ Future
+        //
         // =================================================
 
         long pendingAppointments =
                 appointments.stream()
                         .filter(appointment ->
-                                appointment.getStatus() ==
-                                        AppointmentStatus.PENDING
+                                AppointmentStatus.PENDING.equals(
+                                        appointment.getStatus()
+                                )
                         )
                         .filter(appointment ->
                                 appointment.getAppointmentDate() != null
                         )
                         .filter(appointment ->
-                                !appointment.getAppointmentDate()
+                                !appointment
+                                        .getAppointmentDate()
                                         .isBefore(today)
                         )
                         .count();
+
+        // =================================================
+        // TODAY'S PRESCRIPTIONS
+        // =================================================
 
         int prescriptions =
                 prescriptionRepository
@@ -643,6 +679,10 @@ public class DoctorController {
                                 today
                         )
                         .size();
+
+        // =================================================
+        // RESPONSE
+        // =================================================
 
         Map<String, Object> response =
                 new LinkedHashMap<>();
@@ -720,7 +760,10 @@ public class DoctorController {
                 doctor.getQualification()
         );
 
-        // Department
+        // =================================================
+        // DEPARTMENT
+        // =================================================
+
         if (doctor.getDepartment() != null) {
 
             map.put(
@@ -747,7 +790,10 @@ public class DoctorController {
             );
         }
 
-        // User
+        // =================================================
+        // USER
+        // =================================================
+
         if (doctor.getUser() != null) {
 
             User user =
@@ -849,7 +895,10 @@ public class DoctorController {
                 doctor.getQualification()
         );
 
-        // Department
+        // =================================================
+        // DEPARTMENT
+        // =================================================
+
         if (doctor.getDepartment() != null) {
 
             response.put(

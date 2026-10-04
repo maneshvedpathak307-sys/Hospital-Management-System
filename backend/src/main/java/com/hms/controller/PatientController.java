@@ -18,6 +18,7 @@ import com.hms.entity.AppointmentStatus;
 import com.hms.entity.Patient;
 import com.hms.entity.User;
 import com.hms.repository.AppointmentRepository;
+import com.hms.repository.BillRepository;
 import com.hms.repository.PatientRepository;
 import com.hms.repository.PrescriptionRepository;
 import com.hms.repository.UserRepository;
@@ -34,6 +35,8 @@ public class PatientController {
 
     private final PrescriptionRepository prescriptionRepository;
 
+    private final BillRepository billRepository;
+
 
     // =====================================================
     // CONSTRUCTOR
@@ -43,7 +46,8 @@ public class PatientController {
             PatientRepository patientRepository,
             UserRepository userRepository,
             AppointmentRepository appointmentRepository,
-            PrescriptionRepository prescriptionRepository) {
+            PrescriptionRepository prescriptionRepository,
+            BillRepository billRepository) {
 
         this.patientRepository =
                 patientRepository;
@@ -56,6 +60,9 @@ public class PatientController {
 
         this.prescriptionRepository =
                 prescriptionRepository;
+
+        this.billRepository =
+                billRepository;
     }
 
 
@@ -147,20 +154,6 @@ public class PatientController {
 
             // =================================================
             // 5. GET ALL APPOINTMENTS
-            // =================================================
-            //
-            // IMPORTANT:
-            //
-            // We use findAll() here.
-            //
-            // Therefore you DO NOT need to create:
-            //
-            // findByPatientIdAndAppointmentDateGreaterThanEqual...
-            //
-            // in AppointmentRepository.
-            //
-            // No MySQL table/query modification is required.
-            //
             // =================================================
 
             List<Appointment> allAppointments =
@@ -262,10 +255,6 @@ public class PatientController {
             // =================================================
             // 8. TOTAL APPOINTMENTS
             // =================================================
-            //
-            // Today's + future active appointments.
-            //
-            // =================================================
 
             long totalAppointments =
                     activeAppointments.size();
@@ -273,11 +262,6 @@ public class PatientController {
 
             // =================================================
             // 9. UPCOMING APPOINTMENTS
-            // =================================================
-            //
-            // Includes today's appointments and future
-            // appointments.
-            //
             // =================================================
 
             long upcomingAppointments =
@@ -316,11 +300,30 @@ public class PatientController {
             // 11. PENDING BILLS
             // =================================================
             //
-            // Bill module is not connected yet.
+            // A bill is considered pending when:
+            //
+            // total amount > paid amount
+            //
+            // Example:
+            //
+            // Total Amount = ₹1000
+            // Paid Amount  = ₹0
+            //
+            // Pending Bill = 1
             //
             // =================================================
 
-            long pendingBills = 0;
+            long pendingBills =
+                    billRepository
+                            .findByPatientIdOrderByBillDateDesc(
+                                    patient.getId()
+                            )
+                            .stream()
+                            .filter(bill ->
+                                    bill.getTotalAmount()
+                                            > bill.getPaidAmount()
+                            )
+                            .count();
 
 
             // =================================================

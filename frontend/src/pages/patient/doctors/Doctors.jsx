@@ -29,7 +29,7 @@ function Doctors() {
 
     const [currentPage, setCurrentPage] = useState(1);
 
-    const doctorsPerPage = 5;
+    const doctorsPerPage = 3;
 
 
     /* =========================================
