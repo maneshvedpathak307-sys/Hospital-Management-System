@@ -1191,7 +1191,7 @@ All project screenshots are stored in the `screenshots` folder.
 
 ### 30. Emergency Page
 
-[View Emergency Page](./screenshots/30-Emergency_Page.jpeg)
+![Hospital Emergency Page](./screenshots/30-Emergency_Page.jpeg)
 
 ---
 
