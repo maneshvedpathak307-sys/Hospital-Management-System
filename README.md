@@ -1059,19 +1059,19 @@ All project screenshots are stored in the `screenshots` folder.
 
 ### 1. Login Page
 
-[View Login Page](./screenshots/01-Login_Page.jpeg)
+![Hospital Login Page](./screenshots/01-Login_Page.jpeg)
 
 ### 2. Create Account
 
-[View Create Account](./screenshots/02-Create_Account.jpeg)
+![Hospital Create Account](./screenshots/02-Create_Account.jpeg)
 
 ### 3. Forgot Password
 
-[View Forgot Password](./screenshots/03-Forgot_Password.jpeg)
+![Hospital Forgot Password](./screenshots/03-Forgot_Password.jpeg)
 
 ### 4. Update Password
 
-[View Update Password](./screenshots/04-Update_Password.jpeg)
+![Hospital Update Password](./screenshots/04-Update_Password.jpeg)
 
 ---
 
@@ -1079,47 +1079,47 @@ All project screenshots are stored in the `screenshots` folder.
 
 ### 5. Admin Dashboard
 
-[View Admin Dashboard](./screenshots/05-Admin_Dashboard.jpeg)
+![Hospital Admin Dashboard](./screenshots/05-Admin_Dashboard.jpeg)
 
 ### 6. Manage Doctors
 
-[View Manage Doctors](./screenshots/06-Admin_Doctors.jpeg)
+![Hospital Manage Doctors](./screenshots/06-Admin_Doctors.jpeg)
 
 ### 7. Manage Patients
 
-[View Manage Patients](./screenshots/07-Admin_Patients.jpeg)
+![Hospital Manage Patients](./screenshots/07-Admin_Patients.jpeg)
 
 ### 8. Manage Departments
 
-[View Manage Departments](./screenshots/08-Admin_Departments.jpeg)
+![Hospital Manage Departments](./screenshots/08-Admin_Departments.jpeg)
 
 ### 9. Manage Appointments
 
-[View Manage Appointments](./screenshots/09-Admin_Appointments.jpeg)
+![Hospital Manage Appointments](./screenshots/09-Admin_Appointments.jpeg)
 
 ### 10. Manage Medicines
 
-[View Manage Medicines](./screenshots/10-Admin_Medicines.jpeg)
+![Hospital Manage Medicines](./screenshots/10-Admin_Medicines.jpeg)
 
 ### 11. Admin Billing
 
-[View Admin Billing](./screenshots/11-Admin_Billing.jpeg)
+![Hospital Admin Billing](./screenshots/11-Admin_Billing.jpeg)
 
 ### 12. Admin Bill PDF
 
-[View Admin Bill PDF](./screenshots/12-Admin_Bill_pdf.jpeg)
+![Hospital Admin Bill PDF](./screenshots/12-Admin_Bill_pdf.jpeg)
 
 ### 13. Admin Reports
 
-[View Admin Reports](./screenshots/13-Admin_Reports.jpeg)
+![Hospital Admin Reports](./screenshots/13-Admin_Reports.jpeg)
 
 ### 14. Admin Report PDF
 
-[View Admin Report PDF](./screenshots/14-Admin_Report_pdf.jpeg)
+![Hospital Admin Report PDF](./screenshots/14-Admin_Report_pdf.jpeg)
 
 ### 15. Admin Profile
 
-[View Admin Profile](./screenshots/15-Admin_Profile.jpeg)
+![Hospital Admin Profile](./screenshots/15-Admin_Profile.jpeg)
 
 ---
 
@@ -1127,31 +1127,31 @@ All project screenshots are stored in the `screenshots` folder.
 
 ### 16. Doctor Dashboard
 
-[View Doctor Dashboard](./screenshots/16-Doctor_Dashboard.jpeg)
+![Hospital Doctor Dashboard](./screenshots/16-Doctor_Dashboard.jpeg)
 
 ### 17. Doctor Patients
 
-[View Doctor Patients](./screenshots/17-Doctor_Patients.jpeg)
+![Hospital Doctor Patients](./screenshots/17-Doctor_Patients.jpeg)
 
 ### 18. Doctor Appointments
 
-[View Doctor Appointments](./screenshots/18-Doctor_Appointments.jpeg)
+![Hospital Doctor Appointments](./screenshots/18-Doctor_Appointments.jpeg)
 
 ### 19. Doctor Prescription
 
-[View Doctor Prescription](./screenshots/19-Doctor_Prescription.jpeg)
+![Hospital Doctor Prescription](./screenshots/19-Doctor_Prescription.jpeg)
 
 ### 20. Doctor Report
 
-[View Doctor Report](./screenshots/20-Doctor_Report.jpeg)
+![Hospital Doctor Report](./screenshots/20-Doctor_Report.jpeg)
 
 ### 21. Doctor Report PDF
 
-[View Doctor Report PDF](./screenshots/21-Doctor_Report_pdf.jpeg)
+![Hospital Doctor Report PDF](./screenshots/21-Doctor_Report_pdf.jpeg)
 
 ### 22. Doctor Profile
 
-[View Doctor Profile](./screenshots/22-Doctor_Profile.jpeg)
+![Hospital Doctor Profile](./screenshots/22-Doctor_Profile.jpeg)
 
 ---
 
@@ -1159,31 +1159,31 @@ All project screenshots are stored in the `screenshots` folder.
 
 ### 23. Patient Dashboard
 
-[View Patient Dashboard](./screenshots/23-Patient_Dashboard.jpeg)
+![Hospital Patient Dashboard](./screenshots/23-Patient_Dashboard.jpeg)
 
 ### 24. Patient Doctors
 
-[View Patient Doctors](./screenshots/24-Patient_Doctors.jpeg)
+![Hospital Patient Doctors](./screenshots/24-Patient_Doctors.jpeg)
 
 ### 25. Patient Appointments
 
-[View Patient Appointments](./screenshots/25-Patient_Appointments.jpeg)
+![Hospital Patient Appointments](./screenshots/25-Patient_Appointments.jpeg)
 
 ### 26. Patient Prescription
 
-[View Patient Prescription](./screenshots/26-Patient_Prescription.jpeg)
+![Hospital Patient Prescription](./screenshots/26-Patient_Prescription.jpeg)
 
 ### 27. Patient Prescription PDF
 
-[View Patient Prescription PDF](./screenshots/27-Patient_Prescription_pdf.jpeg)
+![Hospital Patient Prescription PDF](./screenshots/27-Patient_Prescription_pdf.jpeg)
 
 ### 28. Patient Billing
 
-[View Patient Billing](./screenshots/28-Patient_Bill.jpeg)
+![Hospital Patient Billing](./screenshots/28-Patient_Bill.jpeg)
 
 ### 29. Patient Profile
 
-[View Patient Profile](./screenshots/29-Patient_Profile.jpeg)
+![Hospital Patient Profile](./screenshots/29-Patient_Profile.jpeg)
 
 ---
 
